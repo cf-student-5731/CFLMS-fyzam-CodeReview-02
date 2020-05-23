@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CFLMS-fyzam-CodeReview-02</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./style/style_index.css">
+	</head>
+	<body>
+	<!-- HEADER -->	
+		<header>
+			<div id="left">
+				<img src="./img/logo-newspaper-cf.png" alt="CF-Logo">
+			</div>
+			<div id="right">
+				<a href="https://www.codefactory.wien"><img src="./img/banner-1.png" alt="Banner 1"></a>
+			</div><!-- logos -->
+		</header>
+
+	<!-- NAVBAR -->
+		<nav id="top">
+			<ul>
+				<li><a href="./index.html">Home</li></a>
+				<li><a href="./tech.html">Tech</li></a>
+				<li><a href="./culture.html">Culture</li></a>
+				<li><a href="./video.html">Video</li></a>
+			</ul>
+		</nav>
+
+	<!-- TIMESTAMP -->
+		<div id="date">
+			<span id="datetime"></span>
+			<script>
+				var dt = new Date(); /*new date*/
+				var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']; /*days as array of trings*/
+				var dayName = days[dt.getDay()]; /*day by number and choose the string from array*/
+				document.getElementById("datetime").innerHTML = dayName +", " + (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()); /* add "0" show only 2 positions, add 1 to month and send string to #datetime */
+			</script>
+		</div>
+
+
+	<!-- NEWS-BAR -->
+		<article class="news_bar_01">
+			<span>Top news</span>		
+		</article>
+
+	<!-- IMAGE-FLOW -->
+		<div class="news_container_standard">
+			<div class="top_container">
+				<div class="image_container">
+					<div class="figure_container">
+						<a href="./article.html"><article>
+							<figure>
+								<img src="./img/nasa.png" alt="Nasa">	
+								<figcaption>
+									<p>NASA is trying to squash conspiracy</p>
+									<p>theories about the space station leak</p>
+								</figcaption>						
+							</figure>						
+						</article></a>
+					</div> <!-- figure_container -->
+					<div class="figure_container">
+						<a href="./article.html"><article>
+							<figure>
+								<img src="./img/eu.png" alt="EU">	
+								<figcaption>
+									<p>EU approves controversial Copyright</p>
+									<p>Directive, including Internet 'link tax'</p>
+								</figcaption>						
+							</figure>						
+						</article></a>
+					</div> <!-- figure_container -->
+
+					<div class="figure_container">
+						<a href="./article.html"><article>
+							<figure>
+								<img src="./img/jeff.png" alt="Jeff Bezos">	
+								<figcaption>
+									<p>Jeff Bezos is going to create schools</p>
+									<p>where 'the child is the customer</p>
+								</figcaption>						
+							</figure>						
+						</article></a>
+					</div> <!-- figure_container -->
+				</div> <!-- image_container -->
+		<!-- NEWS-BAR -->
+				<article class="news_bar_02">
+					<span>Popular</span>	
+				</article>
+				<div class="image_container">
+					<div class="figure_container">
+						<a href="./article.html"><article>
+							<figure>
+								<img src="./img/polar.png" alt="Polar Watches">	
+								<figcaption>
+									<p>Polar's new fitness watch will</p>
+									<p>measure the wattage of your exercise</p>
+								</figcaption>						
+							</figure>						
+						</article></a>
+					</div> <!-- figure_container -->
+
+					<div class="figure_container">
+						<a href="./article.html"><article>
+							<figure>
+								<img src="./img/musk.jpg" alt="Elon Musk">	
+								<figcaption>
+									<p>Elon Musk smokes marijuana</p>
+									<p>live on web show</p>
+								</figcaption>						
+							</figure>						
+						</article></a>
+					</div> <!-- figure_container -->
+
+					<div class="figure_container">
+						<a href="./article.html"><article>
+							<figure>
+								<img src="./img/snowden.jpg" alt="Edward Snowden">	
+								<figcaption>
+									<p>Edward Snowden surveillance</p>
+									<p>powers ruled unlawful</p>
+								</figcaption>						
+							</figure>						
+						</article></a>
+					</div> <!-- figure_container -->
+				</div> <!-- image_container -->
+			</div> <!-- top_container -->
+			<div class="vertical_banner_container">
+				<article>
+					<a href="https://www.codefactory.wien"><img src="./img/banner-2.png" alt="Banner 2"></a>
+				</article>
+			</div> <!-- vertical_banner_container -->
+		</div> <!-- news_container -->
+
+		<div class="news_container_spacer">
+			<div class="top_container">
+				<div class="image_container">
+					<div class="figure_container_02">
+						<a href="./article.html"><article>
+							<figure>
+								<img src="./img/nasa.png" alt="Nasa">	
+								<figcaption>
+									<p>NASA is trying to squash conspiracy</p>
+									<p>theories about the space station leak</p>
+								</figcaption>						
+							</figure>								
+						</article></a>
+					</div> <!-- figure_container -->
+					<div class="figure_container_02">
+						<a href="./article.html"><article>
+							<figure>
+								<img src="./img/eu.png" alt="EU">	
+								<figcaption>
+									<p>EU approves controversial Copyright</p>
+									<p>Directive, including Internet 'link tax'</p>
+								</figcaption>						
+							</figure>						
+						</article></a>
+					</div> <!-- figure_container -->
+				</div>
+
+				<div class="image_container">
+					<div class="figure_container_02">
+						<a href="./article.html"><article>
+							<figure>
+								<img src="./img/jeff.png" alt="Jeff Bezos">	
+								<figcaption>
+									<p>Jeff Bezos is going to create schools</p>
+									<p>where 'the child is the customer</p>
+								</figcaption>						
+							</figure>						
+						</article></a>
+					</div> <!-- figure_container -->
+					<div class="figure_container_02">
+						<a href="./article.html"><article>
+							<img src="./img/banner_klein-2.png" alt="Banner 3">				
+						</article></a>
+					</div> <!-- figure_container -->
+				</div> <!-- image_container -->
+								<article class="news_bar_02">
+					<span>Popular</span>	
+				</article>
+			</div> <!-- top_container -->
+		</div> <!-- news_container -->
+
+		<div class="horzizontal_banner_container">
+			<article>
+				<a href="https://www.codefactory.wien"><img src="./img/banner-3.png" alt="Banner 3"></a>
+			</article>
+		</div><!-- horzizontal_banner_container -->
+
+
+
+
+
+
+
+
+
+
+		<div class="news_container_spacer">
+			<div class="top_container">
+				<div class="image_container">
+					<div class="figure_container_02">
+						<a href="./article.html"><article>
+							<figure>
+								<img src="./img/polar.png" alt="Polar Watches">	
+								<figcaption>
+									<p>Polar's new fitness watch will</p>
+									<p>measure the wattage of your exercise</p>
+								</figcaption>						
+							</figure>						
+						</article></a>
+					</div> <!-- figure_container -->
+					<div class="figure_container_02">
+						<a href="./article.html"><article>
+							<figure>
+								<img src="./img/musk.jpg" alt="Elon Musk">	
+								<figcaption>
+									<p>Elon Musk smokes marijuana</p>
+									<p>live on web show</p>
+								</figcaption>						
+							</figure>					
+						</article></a>
+					</div> <!-- figure_container -->
+				</div>
+				<div class="image_container">
+					<div class="figure_container_02">
+						<a href="./article.html"><article>
+							<figure>
+								<img src="./img/snowden.jpg" alt="Edward Snowden">	
+								<figcaption>
+									<p>Edward Snowden surveillance</p>
+									<p>powers ruled unlawful</p>
+								</figcaption>						
+							</figure>							
+						</article></a>
+					</div> <!-- figure_container -->
+					<div class="figure_container_02">
+						<a href="./article.html"><article>
+							<figure>
+								<img src="./img/iphone.png" alt="iPhome">	
+								<figcaption>
+									<p>How to preorder the iPhone XS,</p>
+									<p>XS Max, and XR</p>
+								</figcaption>						
+							</figure>							
+						</article></a>
+					</div> <!-- figure_container -->
+				</div> <!-- image_container -->
+				<div class="image_container">
+					<div class="figure_container_02">
+						<a href="./article.html"><article>
+							<figure>
+								<img src="./img/smart.png" alt="Smart strip">	
+								<figcaption>
+									<p>This smart power strip lets you</p>
+									<p>individually control each outlet</p>
+								</figcaption>						
+							</figure>							
+						</article></a>
+					</div> <!-- figure_container -->
+					<div class="figure_container_02">
+						<a href="./article.html"><article>
+							<figure>
+								<img src="./img/one.png" alt="Earbuds">	
+								<figcaption>
+									<p>OnePlus announces super cheap</p>
+									<p>USB-C earbuds</p>
+								</figcaption>						
+							</figure>							
+						</article></a>
+					</div> <!-- figure_container -->
+					
+				</div> <!-- image_container -->
+				<div class="image_container">
+					<div class="figure_container_02">
+						<a href="./article.html"><article>
+							<figure>
+								<img src="./img/phone.png" alt="Spotify">	
+								<figcaption>
+									<p>Spotify raises limit for offline</p>
+									<p>downloads to 10,000 songs per device</p>
+								</figcaption>						
+							</figure>							
+						</article></a>
+					</div> <!-- figure_container -->
+				</div> <!-- image_container -->
+
+			</div> <!-- top_container -->
+		<div class="vertical_banner_container">
+			<article>
+				<a href="https://www.codefactory.wien"><img src="./img/banner-4.png" alt="Banner 4"></a>
+			</article>
+			</div> <!-- vertical_banner_container -->
+		</div> <!-- news_container -->
+
+	<!-- COMMERCIALS-FLOW -->
+		<div class="news_container_standard">
+			<div class="top_container">
+				<div class="image_container">
+					<div class="figure_container_02">
+						<a href="./article.html"><article>
+							<figure>
+								<img src="./img/iphone.png" alt="iPhome">	
+								<figcaption>
+									<p>How to preorder the iPhone XS,</p>
+									<p>XS Max, and XR</p>
+								</figcaption>						
+							</figure>						
+						</article></a>
+					</div> <!-- figure_container -->
+					<div class="figure_container_02">
+						<a href="./article.html"><article>
+							<figure>
+								<img src="./img/smart.png" alt="Smart strip">	
+								<figcaption>
+									<p>This smart power strip lets you</p>
+									<p>individually control each outlet</p>
+								</figcaption>						
+							</figure>						
+						</article></a>
+					</div> <!-- figure_container -->
+				</div>
+				<div class="image_container">
+					<div class="figure_container_02">
+						<a href="./article.html"><article>
+							<figure>
+								<img src="./img/one.png" alt="Earbuds">	
+								<figcaption>
+									<p>OnePlus announces super cheap</p>
+									<p>USB-C earbuds</p>
+								</figcaption>						
+							</figure>						
+						</article></a>
+					</div> <!-- figure_container -->
+					<div class="figure_container_02">
+						<a href="./article.html"><article>
+							<figure>
+								<img src="./img/phone.png" alt="Spotify">	
+								<figcaption>
+									<p>Spotify raises limit for offline</p>
+									<p>downloads to 10,000 songs per device</p>
+								</figcaption>						
+							</figure>						
+						</article></a>
+					</div> <!-- figure_container -->
+				</div> <!-- image_container -->
+			</div> <!-- top_container -->
+		<div class="vertical_banner_container">
+			<article>
+				<a href="https://www.codefactory.wien"><img src="./img/banner-4.png" alt="Banner 4"></a>
+			</article>
+			</div> <!-- vertical_banner_container -->
+		</div> <!-- news_container -->
+
+		<footer>
+	<!-- NAVBAR -->
+			<nav id="bottom">
+				<ul>
+					<li><a href="./index.html">Home</li></a>
+					<li><a href="./tech.html">Tech</li></a>
+					<li><a href="./culture.html">Culture</li></a>
+					<li><a href="./video.html">Video</li></a>
+				</ul>
+			</nav>
+			<div id="bottom_right">
+				<img src="./img/logo-newspaper-cf.png" alt="CF-Logo">
+			</div>
+ 				<p>fyzam - CodeFactory 2020</p>
+			</div>
+		</footer>
+	</body>
+</html>
